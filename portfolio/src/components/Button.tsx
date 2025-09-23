@@ -2,8 +2,8 @@ import { ReactNode } from "react";
 
 interface ButtonProps {
   children?: string;
-  color?: "white" | "blue" | "transparent" | "background";
-  borderColor?: "white" | "blue";
+  color?: "white" | "transparent";
+  borderColor?: "white" 
   icon?: ReactNode;
   onClick?: () => void;
 }
@@ -16,16 +16,12 @@ export const Button = ({
   onClick,
 }: ButtonProps) => {
   const bgColor =
-    color === "blue"
-      ? "bg-cyan-500 text-black hover:bg-cyan-300"
-      : color === "transparent"
-      ? "bg-transparent text-white"
-      : color === "background"
-      ? "bg-zinc-900 text-white hover:bg-zinc-800"
-      : "bg-white text-black hover:bg-white/90";
+  color === "transparent"
+      ? "bg-zinc-900 text-white"
+      : "bg-white text-black hover:bg-cyan-400";
 
   const border = borderColor
-    ? `border-2 ${borderColor === "blue" ? "border-cyan-500" : "border-white hover:border-cyan-400"}`
+    ? `border-2 ${borderColor === "white" ? "border-white" : ""}`
     : "";
   return (
     <button
