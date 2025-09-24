@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
+import { FiArrowUpRight } from "react-icons/fi";
 import { Button } from "@/components/Button";
 import { projects } from "@/data/projectcard";
 import { Card } from "@/components/Card";
@@ -42,7 +42,7 @@ export const Projects = () => {
                 ))}
               </div>
               <a href={project.link} target="_blank" rel="noopener noreferrer">
-                <Button icon={<ArrowUpRightIcon />} color="white">
+                <Button icon={<FiArrowUpRight size={20}/>} color="white">
                   View more
                 </Button>
               </a>

@@ -1,5 +1,5 @@
 import { Button } from "@/components/Button";
-import  ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
+import { FiArrowUpRight } from "react-icons/fi";
 import FadeIn from "@/components/ScrollTrigger";
 
 export const Contact = () => {
@@ -21,7 +21,7 @@ export const Contact = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button color="transparent" icon={<ArrowUpRightIcon />}>
+                <Button color="transparent" icon={<FiArrowUpRight size={20} />}>
                   Contact
                 </Button>
               </a>
