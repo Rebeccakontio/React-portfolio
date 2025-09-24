@@ -20,7 +20,7 @@ export const Hero = () => {
             />
             <div className="max-w-2xl mx-auto">
               <h1 className="text-3xl font-bold md:text-5xl text-center mt-8 tracking-wide">
-                Junior <span className="text-cyan-400">Frontend Developer</span>{" "}
+                <span className="text-cyan-400">Frontend</span> Developer
                 And <span className="text-cyan-400">Designer</span>
               </h1>
               <p className="mt-8 text-center text-white/90 md:text-lg">
