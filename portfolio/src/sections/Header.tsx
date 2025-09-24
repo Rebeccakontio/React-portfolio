@@ -12,7 +12,9 @@ export const Header = () => {
           Experience
         </a>
         <a
-          href="#contact"
+          href="mailto:kontiorebecca@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
           className="nav bg-white text-gray-900 hover:bg-cyan-400 hover:text-gray-900"
         >
           Contact
