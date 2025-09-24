@@ -1,112 +1,56 @@
-import ReactIcon from "@/assets/icons/React.svg";
-import TypeScriptIcon from "@/assets/icons/TypeScript.svg";
-import TailwindIcon from "@/assets/icons/TailwindCSS.svg";
+import {
+  SiReact,
+  SiTypescript,
+  SiTailwindcss,
+  SiExpo,
+  SiMongodb,
+  SiGithub,
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+} from "react-icons/si";
 import FigmaIcon from "@/assets/icons/Figma.svg";
-import CssIcon from "@/assets/icons/CSS3.svg";
-import HTMLIcon from "@/assets/icons/HTML5.svg";
-import ExpoIcon from "@/assets/icons/expo.svg";
-import JavaScriptIcon from "@/assets/icons/JavaScript.svg";
-import GithubIcon from "@/assets/icons/GitHub.svg";
-import VSCodeIcon from "@/assets/icons/VScode.svg";
-import MongoDBIcon from "@/assets/icons/MongoDB.svg";
 import FadeIn from "@/components/ScrollTrigger";
 
 export const Technologies = () => {
+  const techStack = [
+    { Icon: SiReact, label: "React", color: "#61DAFB" },
+    { Icon: SiTypescript, label: "TypeScript", color: "#3178C6" },
+    { Icon: SiTailwindcss, label: "Tailwind CSS", color: "#06B6D4" },
+    { Icon: SiReact, label: "React Native", color: "#61DAFB" },
+    { Icon: SiCss3, label: "CSS3", color: "#1572B6" },
+    { Icon: SiHtml5, label: "HTML5", color: "#E34F26" },
+    { Icon: SiJavascript, label: "JavaScript", color: "#F7DF1E" },
+    { Icon: SiMongodb, label: "MongoDB", color: "#47A248" },
+    { Icon: FigmaIcon, label: "Figma", color: "#7C3AED" },
+    { Icon: SiExpo, label: "Expo", color: "#ffffff" },
+    { Icon: SiGithub, label: "GitHub", color: "#ffffff" },
+  ];
+
   return (
     <div className="container py-16">
       <FadeIn>
-        <h2 className="font-bold text-3xl md:text-5xl text-center">
+        <h2 className="font-bold text-3xl md:text-5xl text-center text-white">
           Technologies I Use
         </h2>
       </FadeIn>
       <FadeIn>
         <div className="flex flex-wrap justify-center gap-8 mt-16">
-          <FadeIn scroll={false} bounce bounceDelay={1}>
-            <div className="flex flex-col items-center border-2 border-white/30 rounded-xl p-4">
-              <ReactIcon className="w-16 h-16" />
-              <span className="mt-2 text-white text-sm text-center">React</span>
-            </div>
-          </FadeIn>
-          <FadeIn scroll={false} bounce bounceDelay={2}>
-            <div className="flex flex-col items-center border-2 border-white/30 rounded-xl p-4">
-              <TypeScriptIcon className="w-16 h-16" />
-              <span className="mt-2 text-white text-sm text-center">
-                TypeScript
-              </span>
-            </div>
-          </FadeIn>
-          <FadeIn scroll={false} bounce bounceDelay={1}>
-            <div className="flex flex-col items-center border-2 border-white/30 rounded-xl p-4">
-              <TailwindIcon className="w-16 h-16" />
-              <span className="mt-2 text-white text-sm text-center">
-                Tailwind CSS
-              </span>
-            </div>
-          </FadeIn>
-          <FadeIn scroll={false} bounce bounceDelay={2}>
-            <div className="flex flex-col items-center border-2 border-white/30 rounded-xl p-4">
-              <ReactIcon className="w-16 h-16" />
-              <span className="mt-2 text-white text-sm text-center">
-                React Native
-              </span>
-            </div>
-          </FadeIn>
-          <FadeIn scroll={false} bounce bounceDelay={1}>
-            <div className="flex flex-col items-center border-2 border-white/30 rounded-xl p-4">
-              <CssIcon className="w-16 h-16" />
-              <span className="mt-2 text-white text-sm text-center">CSS3</span>
-            </div>
-          </FadeIn>
-          <FadeIn scroll={false} bounce bounceDelay={2}>
-            <div className="flex flex-col items-center border-2 border-white/30 rounded-xl p-4">
-              <HTMLIcon className="w-16 h-16" />
-              <span className="mt-2 text-white text-sm text-center">HTML5</span>
-            </div>
-          </FadeIn>
-          <FadeIn scroll={false} bounce bounceDelay={1}>
-            <div className="flex flex-col items-center border-2 border-white/30 rounded-xl p-4">
-              <JavaScriptIcon className="w-16 h-16" />
-              <span className="mt-2 text-white text-sm text-center">
-                JavaScript
-              </span>
-            </div>
-          </FadeIn>
-          <FadeIn scroll={false} bounce bounceDelay={2}>
-            <div className="flex flex-col items-center border-2 border-white/30 rounded-xl p-4">
-              <MongoDBIcon className="w-16 h-16" />
-              <span className="mt-2 text-white text-sm text-center">
-                MongoDB
-              </span>
-            </div>
-          </FadeIn>
-          <FadeIn scroll={false} bounce bounceDelay={1}>
-            <div className="flex flex-col items-center border-2 border-white/30 rounded-xl p-4">
-              <FigmaIcon className="w-16 h-16" />
-              <span className="mt-2 text-white text-sm text-center">Figma</span>
-            </div>
-          </FadeIn>
-          <FadeIn scroll={false} bounce bounceDelay={2}>
-            <div className="flex flex-col items-center border-2 border-white/30 rounded-xl p-4">
-              <ExpoIcon className="w-16 h-16" />
-              <span className="mt-2 text-white text-sm text-center">Expo</span>
-            </div>
-          </FadeIn>
-          <FadeIn scroll={false} bounce bounceDelay={1}>
-            <div className="flex flex-col items-center border-2 border-white/30 rounded-xl p-4">
-              <VSCodeIcon className="w-16 h-16" />
-              <span className="mt-2 text-white text-sm text-center">
-                VS Code
-              </span>
-            </div>
-          </FadeIn>
-          <FadeIn scroll={false} bounce bounceDelay={2}>
-            <div className="flex flex-col items-center border-2 border-white/30 rounded-xl p-4">
-              <GithubIcon className="w-16 h-16" />
-              <span className="mt-2 text-white text-sm text-center">
-                GitHub
-              </span>
-            </div>
-          </FadeIn>
+          {techStack.map(({ Icon, label, color }, i) => (
+            <FadeIn key={label} scroll={false} bounce bounceDelay={(i % 2) + 1}>
+              <div
+                className="flex flex-col items-center border-2 rounded-xl p-4 transition"
+                style={{
+                  borderColor: color,
+                }}
+              >
+                <Icon className="w-16 h-16" style={{ color }} />
+                <span className="mt-2 text-sm text-center" style={{ color }}>
+                  {label}
+                </span>
+              </div>
+            </FadeIn>
+          ))}
         </div>
       </FadeIn>
     </div>
