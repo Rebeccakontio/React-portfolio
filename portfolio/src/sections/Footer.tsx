@@ -1,5 +1,5 @@
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { SiGithub } from "react-icons/si";
+import { SiLinkedin } from "react-icons/si";
 
 
 export const Footer = () => {
@@ -8,20 +8,20 @@ export const Footer = () => {
       <div className="container pt-12 ">
         <div className="py-10 flex flex-col items-center">
           <span>© 2025 Rebecca Kontio. All rights reserved.</span>
-          <nav className="mt-4 inline-flex items-center gap-2">
+          <nav className="mt-4 inline-flex items-center gap-4">
             <a
               href="https://github.com/Rebeccakontio"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <GitHubIcon fontSize="large" />
+              <SiGithub size={32} />
             </a>
             <a
               href="https://www.linkedin.com/in/rebecca-kontio-614230291/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <LinkedInIcon fontSize="large" />
+              <SiLinkedin size={32} />
             </a>
           </nav>
         </div>
