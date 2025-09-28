@@ -44,6 +44,6 @@ export const projects: ProjectCard[] = [
       "My first WordPress Website project for engineering association made independently. Goal was to update the existing website's design and content to this day, and add membership/contact forms. I got free hands redesigning and developing the website.",
     link: "https://www.insinoorikoulutusjohtajat.fi/?lang=en",
     image: IKJryPage,
-    technologies: ["Wordpress", "Woocommerce", "Elementor"],
+    technologies: ["Wordpress", "Elementor"],
   },
 ];

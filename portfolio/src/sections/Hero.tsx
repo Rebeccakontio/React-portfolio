@@ -28,8 +28,7 @@ export const Hero = () => {
                 experience in building web applications through various
                 projects. I am studying my last year as Information Business
                 student majoring in software engineering and project management.
-                Currently, I am looking for an IT internship for 2026 spring or
-                summer. I enjoy building both websites and mobile apps, and I
+                Currently, I am looking for an IT internship. I enjoy building both websites and mobile apps, and I
                 sometimes work on UI designs as well. I am passionate about
                 building responsive, high performing and user-friendly web
                 services. I want to be proficient in latest technologies and
